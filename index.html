@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metallurgy Mysteries: Scan to Discover</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-animation"></div>
+
+    <div class="container">
+        <header>
+            <h1 class="title-animation">Metallurgy Mysteries</h1>
+            <p class="subtitle">Unearth the secrets of the elements</p>
+        </header>
+
+        <main id="quiz-container" class="quiz-container">
+            <div id="start-screen">
+                <h2>Welcome, Apprentice Metallurgist!</h2>
+                <p>Test your knowledge of the ancient and modern arts of metalcraft. Are you ready to begin?</p>
+                <button id="start-btn" class="btn-forge">Begin the Trial</button>
+            </div>
+
+            <div id="question-screen" class="hidden">
+                <h2 id="question-text">Question goes here...</h2>
+                <div id="answer-buttons" class="btn-grid">
+                    </div>
+                <div id="feedback" class="feedback"></div>
+            </div>
+        </main>
+
+        <footer id="result-screen" class="hidden result-screen">
+            <h2>Your Trial is Complete!</h2>
+            <p id="score-text">You have forged your destiny.</p>
+            <button id="restart-btn" class="btn-forge">Forge Anew</button>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
